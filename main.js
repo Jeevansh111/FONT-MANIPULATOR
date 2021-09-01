@@ -14,6 +14,7 @@ function modelLoaded() {
 }
 function draw() {
     background('red');
+    textSize(difference);
     fill('#000000');
     text("Jeevansh", 50,400);
 }
