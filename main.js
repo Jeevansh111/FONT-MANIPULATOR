@@ -14,16 +14,16 @@ function modelLoaded() {
 }
 function draw() {
     background('red');
-    fill('#F90093');
-    text('Jeevansh', 50,400);
+    fill('#000000');
+    text("Jeevansh", 50,400);
 }
 function gotPoses(results)
 {
     if(results.lenght>0)
     {
-        console.log(result);
+        console.log(results);
     }
     leftWristX = results[0].pose.leftWrist.x;
-    leftWristX = results[0].pose.rightWrist.x;
-    difference = floor(leftWristX - rightWrist);
+    rightWristX = results[0].pose.rightWrist.x;
+    difference = floor(leftWristX - rightWristX);
 }
